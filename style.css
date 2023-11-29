@@ -33,7 +33,7 @@ body {
 }
 
 .c-right {
-  background-color: rgb(159, 109, 47);
+  background-color: #f3eeea;
   width: 70%;
 }
 
@@ -144,9 +144,10 @@ img.utente {
 
 .container-chat {
   background-image: url(img/mine.jpg);
-  height: 34.375rem;
+  height: 35.625rem;
   overflow: scroll;
 }
 
 .footer-chat {
+  display: flex;
 }
