@@ -23,14 +23,14 @@
         <!-- Left side -->
         <div class="c-left">
           <header>
-            <div class="h-left">
+            <div class="header-wp">
               <div class="img-utente">
                 <img src="img/avatar_io.jpg" alt="" class="utente" />
               </div>
               <p>Nome Utente</p>
               <!-- left font awesome -->
               <div class="symbol-h-left">
-                <i class="fa-regular fa-circle"></i>
+                <i class="fa-solid fa-circle-notch"></i>
                 <i class="fa-solid fa-message"></i>
                 <i class="fa-solid fa-ellipsis-vertical"></i>
               </div>
@@ -58,11 +58,42 @@
                 placeholder="Cerca o inizia nuova chat"
               />
             </div>
-            <div class="contacts-list"></div>
+            <div class="contacts-list">
+              <ul>
+                <li v-for="contacts in contacts">
+                  {{contacts.name}}
+                  <div class="avatar">
+                    <img
+                      v-for="(avatar,index )in contacts.avatar"
+                      :src="avatar"
+                      :alt="`immagine: ${index}`"
+                    />
+                  </div>
+                </li>
+              </ul>
+            </div>
           </main>
         </div>
         <!-- Right side -->
-        <div class="c-right"></div>
+        <div class="c-right">
+          <header>
+            <div class="header-wp">
+              <div class="img-utente">
+                <img src="img/avatar_1.jpg" alt="" class="utente" />
+              </div>
+              <p>Nome Utente</p>
+              <!-- left font awesome -->
+              <div class="symbol-h-left">
+               <i role="button" class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-paperclip"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            
+              
+            </div>
+          </header>
+        </div>
       </div>
     </div>
     <!-- Vue Js -->
