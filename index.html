@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boolzapp</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Js App -->
+    <div id="app">
+      <!-- Container Whatsapp -->
+      <div class="wp-container">
+        <!-- Left side -->
+        <div class="c-left">
+          <header>
+            <div class="h-left">
+              <div class="img-utente">
+                <img src="img/avatar_io.jpg" alt="" class="utente" />
+              </div>
+              <p>Nome Utente</p>
+              <!-- left font awesome -->
+              <div class="symbol-h-left">
+                <i class="fa-regular fa-circle"></i>
+                <i class="fa-solid fa-message"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </div>
+            </div>
+            <!-- left bottom header -->
+            <div class="h-left-bottom">
+              <div class="circle">
+                <i class="fa-regular fa-bell-slash"></i>
+              </div>
+              <div class="text-c">
+                <strong>Ricevi notifiche di nuovi messaggi</strong>
+                <a href="">Attiva notifiche dekstop</a>
+              </div>
+            </div>
+          </header>
+          <main>
+            <!-- search bar -->
+            <div class="c-search">
+              <button class="search-font-bar">
+                <i role="button" class="fa-solid fa-magnifying-glass"></i>
+              </button>
+              <input
+                class="search"
+                type="search"
+                placeholder="Cerca o inizia nuova chat"
+              />
+            </div>
+            <div class="contacts-list"></div>
+          </main>
+        </div>
+        <!-- Right side -->
+        <div class="c-right"></div>
+      </div>
+    </div>
+    <!-- Vue Js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- My Js -->
+    <script src="main.js"></script>
+  </body>
+</html>
