@@ -141,3 +141,12 @@ img.utente {
   border-top: rgb(203, 203, 203);
   border-bottom: 1px solid rgb(203, 203, 203);
 }
+
+.container-chat {
+  background-image: url(img/mine.jpg);
+  height: 34.375rem;
+  overflow: scroll;
+}
+
+.footer-chat {
+}
