@@ -60,14 +60,14 @@
             </div>
             <div class="contacts-list">
               <ul>
-                <li v-for="(contacts,index) in contacts">
+                <li v-for=" contacts in contacts">
                   {{contacts.name}}
                   
                   <div class="avatar">
                     <img
                       v-for="avatar in contacts"
                       :src="avatar"
-                      :alt="`immagine ${index}`"
+               
                       class="utente"
                      
                     />
@@ -99,7 +99,16 @@
 
              <footer>
               <div class="footer-chat">
-                
+             
+                  <i class="fa-regular fa-face-smile"></i>
+
+            
+                <input
+                class="chat"
+                type="search"
+                placeholder="Scrivi un messaggio"
+              />
+              <i class="fa-solid fa-microphone"></i>
               </div>
              </footer>
               

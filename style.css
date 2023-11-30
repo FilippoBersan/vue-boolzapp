@@ -143,4 +143,28 @@ img.utente {
 
 .footer-chat {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.625rem;
+}
+
+.chat {
+  margin-top: 0.3125rem;
+  width: 75%;
+
+  height: 3.75rem;
+  border: 1px solid rgb(240, 240, 240);
+  border-left: none;
+}
+
+.fa-face-smile {
+  margin-left: 1.25rem;
+  font-size: 1.875rem;
+  color: #8b8a8a;
+}
+
+.fa-microphone {
+  margin-right: 1.25rem;
+  font-size: 1.875rem;
+  color: #8b8a8a;
 }
