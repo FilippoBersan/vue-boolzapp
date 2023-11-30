@@ -5,15 +5,8 @@
 }
 
 body {
-  width: 100%;
   height: 100vh;
-  background: linear-gradient(
-    to top,
-    #dbdbd3 0%,
-    #dbdbd3 80%,
-    #009788 20%,
-    #009788 20%
-  );
+  background: linear-gradient(to top, #dbdbd3 80%, #009788 20%);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -60,13 +60,16 @@
             </div>
             <div class="contacts-list">
               <ul>
-                <li v-for="contacts in contacts">
+                <li v-for="(contacts,index) in contacts">
                   {{contacts.name}}
+                  
                   <div class="avatar">
                     <img
-                      v-for="(avatar,index )in contacts.avatar"
+                      v-for="avatar in contacts"
                       :src="avatar"
-                      :alt="`immagine: ${index}`"
+                      :alt="`immagine ${index}`"
+                      class="utente"
+                     
                     />
                   </div>
                 </li>
@@ -91,9 +94,7 @@
               </div>
             </div>
             
-             <div class="container-chat">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus similique quo vitae, quas voluptas id accusamus aspernatur necessitatibus eius iusto? Quaerat iusto rerum ad voluptate sapiente debitis ut tempore molestias.
-             Id nobis in similique ipsum rem excepturi earum quae quo. Voluptates illo nesciunt accusamus. Deserunt, laudantium vitae molestias architecto ipsum fugiat nisi eius consectetur porro voluptate laborum, pariatur voluptatibus dolor.
-             Blanditiis ex facilis fugit velit dolores consequatur repellendus doloremque possimus quod reprehenderit magnam, deserunt ipsa quasi d
+             <div class="container-chat">
       </div>
 
              <footer>
