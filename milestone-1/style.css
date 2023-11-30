@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to top, #dbdbd3 80%, #009788 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wp-container {
+  background-color: antiquewhite;
+  width: 90vw;
+  height: 90vh;
+
+  display: flex;
+}
+
+.c-left {
+  background-color: #fafafa;
+  width: 30%;
+  overflow: hidden;
+}
+
+.c-right {
+  display: flex;
+  width: 1000px;
+}
+
+.c-right header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-wp {
+  display: flex;
+  align-items: center;
+  height: 4.375rem;
+  background-color: #eaeaea;
+  padding: 0.625rem;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+
+img.utente {
+  height: 3.75rem;
+  width: 3.75rem;
+
+  border-radius: 50%;
+}
+
+.h-left p {
+  font-size: 1.125rem;
+  position: relative;
+  right: 2.5rem;
+}
+
+.symbol-h-left {
+  display: flex;
+  gap: 1.25rem;
+  color: #b1b1b1;
+  font-size: 1.5625rem;
+}
+
+.h-left-bottom {
+  display: flex;
+  gap: 1.25rem;
+  background-color: #8edafc;
+  padding: 0.625rem;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.75rem;
+  width: 3.75rem;
+  background-color: azure;
+  border-radius: 50%;
+}
+
+.fa-bell-slash {
+  font-size: 2.5rem;
+  color: #8edafc;
+}
+
+.text-c {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-c a {
+  color: #3a738e;
+}
+
+.search {
+  margin-top: 0.3125rem;
+  width: 85%;
+  height: 1.875rem;
+  border: 1px solid rgb(240, 240, 240);
+  border-left: none;
+}
+
+.c-search {
+  display: flex;
+  justify-content: center;
+}
+
+.search-font-bar {
+  width: 10%;
+  margin-top: 0.3125rem;
+  display: flex;
+  color: #b1b1b1;
+  align-items: center;
+  background-color: white;
+  justify-content: center;
+  cursor: pointer;
+
+  border: 0.0625rem solid rgb(240, 240, 240);
+  border-right: none;
+}
+
+.contacts-list {
+  background-color: white;
+  margin-top: 0.625rem;
+  overflow: scroll;
+  height: 34.375rem;
+  width: 97%;
+  border-right: 2px solid rgb(203, 203, 203);
+}
+
+/* dalla lista contatti */
+
+.contacts-list li {
+  display: flex;
+  gap: 0.625rem;
+
+  height: 4.625rem;
+  border-top: rgb(203, 203, 203);
+  border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.info-contacts {
+  padding: 0.625rem;
+}
+
+.info-contacts p {
+  color: #b1b1b1;
+}
+
+.container-chat {
+  background-image: url(img/mine.jpg);
+  flex-grow: 1;
+  overflow: scroll;
+}
+
+.footer-chat {
+  display: flex;
+
+  justify-content: space-between;
+
+  background-color: #f3eeea;
+}
+
+.chat {
+  width: 75%;
+
+  height: 3.75rem;
+  border: 1px solid rgb(240, 240, 240);
+  border-left: none;
+}
+
+.fa-face-smile {
+  margin-left: 1.25rem;
+  font-size: 1.875rem;
+  color: #8b8a8a;
+}
+
+.fa-microphone {
+  margin-right: 1.25rem;
+  font-size: 1.875rem;
+  color: #b1b1b1;
+}
+
+img.utente {
+  position: relative;
+  top: 0.3125rem;
+}
+
+.li-contacts {
+  padding-left: 0.625rem;
+}
+
+.li-contacts:hover {
+  background-color: #dbdbd3;
+  cursor: pointer;
+}
+.orario {
+  text-align: end;
+  position: relative;
+  bottom: 2.5rem;
+  left: 6.25rem;
+}
+
+/* parte chat */
+
+.img-utente {
+  display: flex;
+}
+.img-utente strong {
+  position: relative;
+  top: 1.25rem;
+  left: 0.625rem;
+}
