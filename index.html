@@ -60,18 +60,32 @@
             </div>
             <div class="contacts-list">
               <ul>
-                <li v-for=" contacts in contacts">
-                  {{contacts.name}}
-                  
+                
+                <li v-for=" contact in contacts" class="li-contacts">
                   <div class="avatar">
                     <img
-                      v-for="avatar in contacts"
-                      :src="avatar"
+                      
+                      :src="contact.avatar"
                
                       class="utente"
                      
                     />
+                   
                   </div>
+                  <div class="info-contacts">
+                    <strong> {{contact.name}}</strong>
+                    <p>Ultimo messaggio inviato</p>
+                   <div class="orario">
+                   <p>12:00</p>
+                  </div>
+                  </div>
+                 
+
+                
+          
+             
+                  
+                  
                 </li>
               </ul>
             </div>
@@ -83,8 +97,9 @@
             <div class="header-wp">
               <div class="img-utente">
                 <img src="img/avatar_1.jpg" alt="" class="utente" />
+                   <strong>Michele</strong>
               </div>
-              <p id="" ></p>
+           
              
               <!-- left font awesome -->
               <div class="symbol-h-left">
@@ -94,9 +109,10 @@
               </div>
             </div>
             
-             <div class="container-chat">
+             <div class="container-chat">a
       </div>
 
+      <!-- chat footer -->
              <footer>
               <div class="footer-chat">
              

@@ -16,6 +16,7 @@ body {
   background-color: antiquewhite;
   width: 90vw;
   height: 90vh;
+
   display: flex;
 }
 
@@ -26,8 +27,14 @@ body {
 }
 
 .c-right {
-  background-color: #f3eeea;
-  width: 70%;
+  display: flex;
+  width: 1000px;
+}
+
+.c-right header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .header-wp {
@@ -130,26 +137,37 @@ img.utente {
 /* dalla lista contatti */
 
 .contacts-list li {
-  height: 5.625rem;
+  display: flex;
+  gap: 0.625rem;
+
+  height: 4.625rem;
   border-top: rgb(203, 203, 203);
   border-bottom: 1px solid rgb(203, 203, 203);
 }
 
+.info-contacts {
+  padding: 0.625rem;
+}
+
+.info-contacts p {
+  color: #b1b1b1;
+}
+
 .container-chat {
   background-image: url(img/mine.jpg);
-  height: 35.625rem;
+  flex-grow: 1;
   overflow: scroll;
 }
 
 .footer-chat {
   display: flex;
+
   justify-content: space-between;
-  align-items: center;
-  padding-top: 0.625rem;
+
+  background-color: #f3eeea;
 }
 
 .chat {
-  margin-top: 0.3125rem;
   width: 75%;
 
   height: 3.75rem;
@@ -166,5 +184,36 @@ img.utente {
 .fa-microphone {
   margin-right: 1.25rem;
   font-size: 1.875rem;
-  color: #8b8a8a;
+  color: #b1b1b1;
+}
+
+img.utente {
+  position: relative;
+  top: 0.3125rem;
+}
+
+.li-contacts {
+  padding-left: 0.625rem;
+}
+
+.li-contacts:hover {
+  background-color: #dbdbd3;
+  cursor: pointer;
+}
+.orario {
+  text-align: end;
+  position: relative;
+  bottom: 2.5rem;
+  left: 6.25rem;
+}
+
+/* parte chat */
+
+.img-utente {
+  display: flex;
+}
+.img-utente strong {
+  position: relative;
+  top: 1.25rem;
+  left: 0.625rem;
 }
