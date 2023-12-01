@@ -186,14 +186,14 @@ img.utente {
   top: 0.3125rem;
   left: 0.625rem;
 }
-
-.li-contacts {
-}
-
-.li-contacts:hover {
-  background-color: #dbdbd3;
+.list-contacts {
   cursor: pointer;
 }
+
+.list-contacts .contact.active {
+  background-color: #c5c5c5;
+}
+
 .orario {
   text-align: end;
   position: relative;
@@ -242,8 +242,8 @@ img.utente {
 
   padding: 0.625rem;
   align-items: center;
-  height: 3.125rem;
-  width: 6.25rem;
+
+  width: 10rem;
   background-color: #d5f9ba;
   border-radius: 0.625rem;
 }
@@ -252,8 +252,8 @@ img.utente {
   display: flex;
   padding: 0.625rem;
   align-items: center;
-  height: 3.125rem;
-  width: 6.25rem;
+
+  width: 10rem;
   background-color: #ffffff;
   border-radius: 0.625rem;
 }

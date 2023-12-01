@@ -5,6 +5,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      currentContact: 0,
       contacts: [
         {
           name: 'Michele',
@@ -168,7 +169,12 @@ createApp({
           ],
         },
       ],
-      currentIndex: 0,
     };
+  },
+  methods: {
+    changeContact(index) {
+      console.log(index);
+      this.currentContact = index;
+    },
   },
 }).mount('#app');

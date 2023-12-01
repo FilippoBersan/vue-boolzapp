@@ -59,21 +59,27 @@
               />
             </div>
             <div class="contacts-list">
-              <ul>
+              <ul class="list-contacts">
                 
-                <li v-for=" contact in contacts" class="li-contacts">
+                <li 
+                :alt="contact.name"
+                v-for=" (contact,index) in contacts" 
+                class="contact"
+                :class="{active: currentContact === index}"
+                @click="changeContact(index)" >
                   <div class="avatar">
                     <img
                       
                       :src="contact.avatar"
                
                       class="utente"
-                     
+                     :alt="contact.name"
+
                     />
                    
                   </div>
                   <div class="info-contacts">
-                    <strong> {{contact.name}}</strong>
+                    <strong>{{contact.name}}</strong>
                     <p>Ultimo messaggio inviato</p>
                    <div class="orario">
                    <p>12:00</p>
@@ -98,7 +104,7 @@
               <div class="img-utente">
                 <img src="img/avatar_1.jpg" alt="" class="utente" />
                 <div class="info-c-chat">
-                   <strong>Michele</strong>
+                   <strong>{{contacts[currentContact].name}}</strong>
                    <p>Ultimo accesso alle 12:00</p>
                 </div>
                   
@@ -118,7 +124,7 @@
              <div class="container-chat">
               <div class="cont-send-message">
                 <div class="send-message"
-                v-for="">{{}}</div>
+            >{{contacts[currentContact].messages}}</div>
               </div>
               <div class="cont-received-message">
                 <div class="received-message">r</div>
