@@ -205,11 +205,17 @@ img.utente {
 
 .img-utente {
   display: flex;
+  gap: 1.25rem;
 }
-.img-utente strong {
-  position: relative;
-  top: 1.25rem;
-  left: 0.625rem;
+
+.info-c-chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-c-chat p {
+  color: #9a9a9a;
 }
 
 .container-chat {
