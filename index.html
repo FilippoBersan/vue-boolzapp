@@ -102,7 +102,7 @@
           <header>
             <div class="header-wp">
               <div class="img-utente">
-                <img src="img/avatar_1.jpg" alt="" class="utente" />
+                <img   :src="contacts[currentContact].avatar" alt="" class="utente" />
                 <div class="info-c-chat">
                    <strong>{{contacts[currentContact].name}}</strong>
                    <p>Ultimo accesso alle 12:00</p>
@@ -127,7 +127,7 @@
             >{{contacts[currentContact].messages}}</div>
               </div>
               <div class="cont-received-message">
-                <div class="received-message">r</div>
+                <div class="received-message">{{contacts[currentContact].messages}}</div>
               </div>
       </div>
          <!-- chat -->
