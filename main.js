@@ -5,6 +5,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      searchKey: '',
       currentContact: 0,
 
       contacts: [
@@ -176,6 +177,17 @@ createApp({
     changeContact(index) {
       console.log(index);
       this.currentContact = index;
+    },
+
+    filterContacts() {
+      if (this.searchKey.trim() !== '') {
+        console.log('ricerca');
+        return this.contacts.filter((contact) =>
+          contact.name.toLowerCase().includes(this.searchKey)
+        );
+      } else {
+        return this.contacts;
+      }
     },
   },
 }).mount('#app');

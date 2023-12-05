@@ -56,6 +56,7 @@
                 class="search"
                 type="search"
                 placeholder="Cerca o inizia nuova chat"
+                v-model="searchKey"
               />
             </div>
             <div class="contacts-list">
@@ -63,7 +64,7 @@
                 
                 <li 
                 :alt="contact.name"
-                v-for=" (contact,index) in contacts" 
+                v-for=" (contact,index) in filterContacts()" 
                 class="contact"
                 :class="{active: currentContact === index}"
                 @click="changeContact(index)" >
@@ -122,7 +123,9 @@
             
             <!-- chat -->
              <div class="container-chat">
-              <div class="cont-send-message">
+              <div 
+              v-for=" (contact,index) in contacts" 
+              class="cont-send-message">
                 <div class="send-message"
             >{{contacts[currentContact].messages}}</div>
               </div>
